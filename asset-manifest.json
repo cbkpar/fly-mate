@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fly-mate/static/css/main.cb809c06.chunk.css",
+    "main.js": "/fly-mate/static/js/main.f63e5d0b.chunk.js",
+    "main.js.map": "/fly-mate/static/js/main.f63e5d0b.chunk.js.map",
+    "runtime-main.js": "/fly-mate/static/js/runtime-main.ee2ac87e.js",
+    "runtime-main.js.map": "/fly-mate/static/js/runtime-main.ee2ac87e.js.map",
+    "static/js/2.acb9de78.chunk.js": "/fly-mate/static/js/2.acb9de78.chunk.js",
+    "static/js/2.acb9de78.chunk.js.map": "/fly-mate/static/js/2.acb9de78.chunk.js.map",
+    "static/js/3.c1981103.chunk.js": "/fly-mate/static/js/3.c1981103.chunk.js",
+    "static/js/3.c1981103.chunk.js.map": "/fly-mate/static/js/3.c1981103.chunk.js.map",
+    "index.html": "/fly-mate/index.html",
+    "static/css/main.cb809c06.chunk.css.map": "/fly-mate/static/css/main.cb809c06.chunk.css.map",
+    "static/js/2.acb9de78.chunk.js.LICENSE.txt": "/fly-mate/static/js/2.acb9de78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee2ac87e.js",
+    "static/js/2.acb9de78.chunk.js",
+    "static/css/main.cb809c06.chunk.css",
+    "static/js/main.f63e5d0b.chunk.js"
+  ]
+}
