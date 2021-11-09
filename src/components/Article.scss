@@ -1,0 +1,116 @@
+/* 기사 */
+.article {
+  height: 800px;
+  margin: 10px;
+
+  .container {
+    padding: 20px;
+    height: 600px;
+
+    .date {
+      font-size: 22px;
+      font-weight: 600;
+      color: rgb(139, 152, 163);
+    }
+
+    .search {
+      color: rgb(186,197,207);
+      
+      h4 {
+        font-size: 12px;
+        margin: 5px 0 2px 0;
+      }
+
+      .search_detail {
+        display: flex;
+        justify-content: c;
+        margin: 5px 0 10px 0;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+      
+      li {
+        background-color: rgb(227, 232, 237);
+        border-radius: 10px;
+        padding: 5px 0;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      li:nth-child(n) {
+        width: 30%;
+      }
+
+      h3 {
+        width: 15%;
+        margin: 0 30px;
+        text-align: center;
+        color: #fff;
+        background: #bac5cf;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+    }
+
+    .board {
+      display: flex;
+      justify-content: space-between;
+
+      .board_left {
+        width: 47%;
+        height: 300px;
+        background: rgb(186,197,207);
+        border-radius: 10px;
+      }
+      
+      .board_right {
+        width: 47%;
+        height: 300px;
+        background: rgb(186,197,207);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .article .container .search h3 {
+    width: 20%;
+  }
+
+  .article .container .board {
+    flex-wrap: wrap;
+  }
+  .article .container .board .board_left {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .article .container .board .board_right {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .nav .btn_add_schedule {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article .container .date {
+    font-size: 18px;
+  }
+
+  .article .container .search ul {
+    width: 90%;
+  }
+
+  .article .container .search h3 {
+    margin: 0 10px;
+  }
+}

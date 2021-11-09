@@ -1,0 +1,10 @@
+{
+  "continent": [
+    {"id": 1, "name": "america", "kor_name": "아메리카"},
+    {"id": 2, "name": "europe", "kor_name": "유럽"},
+    {"id": 3, "name": "asia", "kor_name": "아시아"},
+    {"id": 4, "name": "oceania", "kor_name": "오세아니아"},
+    {"id": 5, "name": "antarctica", "kor_name": "남극"},
+    {"id": 6, "name": "africa", "kor_name": "아프리카"}
+  ]
+}

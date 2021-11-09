@@ -1,0 +1,138 @@
+/* 네비게이션 */
+.nav {
+  background: #d6dce2;
+  height: 350px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  .container {
+    padding: 20px;
+    text-align: center;
+    color: rgb(126,138,149);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .from {
+
+    h3 {
+      display: inline-block;
+      font-size: 12px;
+    }
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 15px 10px 5px 10px;
+      background: #edf0f3;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+
+    li:nth-child(1) {
+      width: 100px;
+    }
+
+    li:nth-child(2) {
+      width: 150px;
+    }
+
+    li:nth-child(3) {
+      width: 150px;
+    }
+  }
+
+  .to {
+    h3 {
+      display: inline-block;
+      font-size: 12px;
+    }
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px 10px 15px 10px;
+      background: #edf0f3;
+      font-weight: 700;
+      border-radius: 10px;
+    }
+
+    li:nth-child(1) {
+      width: 100px;
+    }
+
+    li:nth-child(2) {
+      width: 150px;
+    }
+
+    li:nth-child(3) {
+      width: 150px;
+    }
+  }
+
+  .btn_add_schedule {
+    background: #bac5cf;
+    width: 250px;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0px auto;
+    border-radius: 20px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .nav {
+    height: 400px;
+  }
+  
+  .nav .from h3 {
+    display: block;
+    margin: 5px 0 0 0 ;
+  }
+
+  .nav .from ul {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav .from li {
+    margin: 5px 0;
+  }
+  .nav .from li:nth-child(n) {
+    width: 90%;
+  }
+
+  .nav .to h3 {
+    display: block;
+    margin: 5px 0 0 0 ;
+  }
+
+  .nav .to ul {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav .to li {
+    margin: 5px 0;
+  }
+  .nav .to li:nth-child(n) {
+    width: 90%;
+  }
+}
