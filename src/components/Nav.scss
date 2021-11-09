@@ -15,67 +15,22 @@
     margin: 0;
   }
 
-  .from {
+  h3 {
+    display: inline-block;
+    font-size: 12px;
+  }
 
-    h3 {
-      display: inline-block;
-      font-size: 12px;
-    }
-
+  .from, .to {
     ul {
-      display: inline-block;
+      display: inline-block
     }
 
-    li {
+    > ul > li {
       display: inline-block;
       padding: 5px 10px;
       margin: 15px 10px 5px 10px;
-      background: #edf0f3;
       font-weight: 700;
       border-radius: 10px;
-    }
-
-    li:nth-child(1) {
-      width: 100px;
-    }
-
-    li:nth-child(2) {
-      width: 150px;
-    }
-
-    li:nth-child(3) {
-      width: 150px;
-    }
-  }
-
-  .to {
-    h3 {
-      display: inline-block;
-      font-size: 12px;
-    }
-
-    ul {
-      display: inline-block;
-    }
-
-    li {
-      display: inline-block;
-      padding: 5px 10px;
-      margin: 5px 10px 15px 10px;
-      background: #edf0f3;
-      font-weight: 700;
-      border-radius: 10px;
-    }
-
-    li:nth-child(1) {
-      width: 100px;
-    }
-
-    li:nth-child(2) {
-      width: 150px;
-    }
-
-    li:nth-child(3) {
       width: 150px;
     }
   }
@@ -94,45 +49,113 @@
   }
 }
 
+.selectBox * { box-sizing: border-box; }
+.selectBox {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 auto;
+  background: #edf0f3;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.selectBox:hover {
+  background-color: #cccccc;
+}
+
+.selectBox.active {
+  background-color: #cccccc;
+}
+
+.selectBox:before {
+  content: '✈';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  right: 8px; 
+  z-index: -1;
+}
+
+.selectBox .label {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border: 0 none;
+  outline: 0 none;
+  padding: 5px 10px 5px 20px;
+  background: transparent;
+  cursor: pointer;
+  color: rgb(126,138,149);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.selectBox .optionList {
+  position: absolute; 
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background: #edf0f3;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 0;
+  transition: .3s ease-in;
+}
+
+.selectBox .optionList::-webkit-scrollbar {width: 6px;}
+.selectBox .optionList::-webkit-scrollbar-track {background: transparent; }
+.selectBox .optionList::-webkit-scrollbar-thumb {background: #303030; border-radius: 45px;}
+.selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
+
+.selectBox.active {
+    z-index: 10;
+}
+
+.selectBox.active .optionList {
+  max-height: 500px;
+}
+
+.selectBox .optionItem {
+  border-bottom: 1px dashed #adadad;
+  padding: 5px 15px 5px;
+  transition: .1s;
+  font-size: 12px;
+  text-align: left;
+}
+
+.selectBox .optionItem:hover {
+  background: #cccccc;
+}
+
+.selectBox .optionItem:last-child {
+  border-bottom: 0 none;
+}
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
   .nav {
     height: 400px;
-  }
-  
-  .nav .from h3 {
-    display: block;
-    margin: 5px 0 0 0 ;
-  }
 
-  .nav .from ul {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
+    .from, .to {
+      h3 {
+        display: block;
+        margin: 5px 0 0 0 ;
 
-  .nav .from li {
-    margin: 5px 0;
-  }
-  .nav .from li:nth-child(n) {
-    width: 90%;
-  }
+      }
 
-  .nav .to h3 {
-    display: block;
-    margin: 5px 0 0 0 ;
-  }
+      > ul {
+        width: 100%;
+      }
 
-  .nav .to ul {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .nav .to li {
-    margin: 5px 0;
-  }
-  .nav .to li:nth-child(n) {
-    width: 90%;
+      > ul > li {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
 }

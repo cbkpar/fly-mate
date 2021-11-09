@@ -1,10 +1,27 @@
 {
   "continent": [
+    {"id": 0, "name": "all", "kor_name": "전체"},
     {"id": 1, "name": "america", "kor_name": "아메리카"},
     {"id": 2, "name": "europe", "kor_name": "유럽"},
     {"id": 3, "name": "asia", "kor_name": "아시아"},
     {"id": 4, "name": "oceania", "kor_name": "오세아니아"},
     {"id": 5, "name": "antarctica", "kor_name": "남극"},
     {"id": 6, "name": "africa", "kor_name": "아프리카"}
+  ],
+  "countries": [
+    {"id": 1, "continent": 1, "name":"Guyana", "kor_name":"가이아나"},
+    {"id": 2, "continent": 1, "name":"Guatemala", "kor_name":"과테말라"},
+    {"id": 3, "continent": 1, "name":"Grenada", "kor_name":"그레나다"},
+    {"id": 4, "continent": 1, "name":"Nicaragua", "kor_name":"니카라과"},
+    {"id": 5, "continent": 2, "name":"Greece", "kor_name":"그리스"},
+    {"id": 6, "continent": 2, "name":"Nederland", "kor_name":"네덜란드"},
+    {"id": 7, "continent": 3, "name":"Korea", "kor_name":"대한민국"},
+    {"id": 8, "continent": 3, "name":"Japan", "kor_name":"일본"},
+    {"id": 9, "continent": 3, "name":"China", "kor_name":"중국"},
+    {"id": 10, "continent": 4, "name":"Austrailia", "kor_name":"호주"},
+    {"id": 11, "continent": 4, "name":"Philippine", "kor_name":"필리핀"},
+    {"id": 12, "continent": 5, "name":"antarctica", "kor_name":"남극"},
+    {"id": 13, "continent": 6, "name":"Gana", "kor_name":"가나"},
+    {"id": 14, "continent": 6, "name":"Egypt", "kor_name":"이집트"}
   ]
 }
