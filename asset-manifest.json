@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fly-mate/static/css/main.5660e72e.chunk.css",
-    "main.js": "/fly-mate/static/js/main.eac4e19d.chunk.js",
-    "main.js.map": "/fly-mate/static/js/main.eac4e19d.chunk.js.map",
+    "main.js": "/fly-mate/static/js/main.f9ef599e.chunk.js",
+    "main.js.map": "/fly-mate/static/js/main.f9ef599e.chunk.js.map",
     "runtime-main.js": "/fly-mate/static/js/runtime-main.d667f9eb.js",
     "runtime-main.js.map": "/fly-mate/static/js/runtime-main.d667f9eb.js.map",
     "static/js/2.1fc06843.chunk.js": "/fly-mate/static/js/2.1fc06843.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d667f9eb.js",
     "static/js/2.1fc06843.chunk.js",
     "static/css/main.5660e72e.chunk.css",
-    "static/js/main.eac4e19d.chunk.js"
+    "static/js/main.f9ef599e.chunk.js"
   ]
 }
