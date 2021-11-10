@@ -32,36 +32,6 @@ li {
   padding: 0;
 }
 
-
-
-
-/* 반응형 */
-@media screen and (min-width: 1440px) {
-
-}
-
-@media screen and (max-width: 1439px) {
-
-}
-
-@media screen and (max-width: 1023px) {
-
-}
-
-@media screen and (max-width: 960px) {
-
-}
-
-@media screen and (max-width: 768px) {
-  
-}
-
-@media screen and (max-width: 600px) {
-
-}
-
-@media screen and (max-width: 480px) {
-
-}
-
-
+/* 스크롤바 제거 */
+body { -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Nav.scss';
-import cities from '../data/cities.json'
+import cities from '../../data/cities.json'
 
 class Nav extends Component {
 
