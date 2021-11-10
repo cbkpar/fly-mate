@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import './Article.scss';
 import Clock from 'react-live-clock'
+import SubArticle from './SubArticle'
 
 class Article extends Component {
+
   render() {
     return (
       <section className="article">
@@ -23,7 +25,7 @@ class Article extends Component {
         </div>
         <div className="board">
           <div className="board_left"></div>
-          <div className="board_right"></div>
+          <div className="board_right"><SubArticle /></div>
         </div>
       </div>
     </section>
