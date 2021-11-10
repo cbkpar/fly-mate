@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Article.scss';
+import Clock from 'react-live-clock'
 
 class Article extends Component {
   render() {
@@ -7,7 +8,7 @@ class Article extends Component {
       <section className="article">
       <div className="container">
         <div className="date">
-          0000년 00월 00일 코로나 19 정보
+          <Clock format={'YYYY년 MM월 DD일'} ticking={false} /> 코로나 19 정보
         </div>
         <div className="search">
           <h4>내가 원하는 지역 코로나 정보 알아보기</h4>

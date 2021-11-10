@@ -1,11 +1,11 @@
 /* 기사 */
 .article {
-  height: 800px;
+  height: 500px;
   margin: 10px;
 
   .container {
     padding: 20px;
-    height: 600px;
+    height: 450px;
 
     .date {
       font-size: 22px;
@@ -79,6 +79,10 @@
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
+  .article {
+    height: 750px;
+  }
+  
   .article .container .search h3 {
     width: 20%;
   }

@@ -1,2 +1,2 @@
 # Team project
-You can try this project here(https://cbkpar.github.io/fly-mate/index.html)
+You can try this project here(https://cbkpar.github.io/fly-mate)

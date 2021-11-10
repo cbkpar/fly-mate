@@ -1,0 +1,64 @@
+/* 인기있는 게시글 */
+.popular {
+  position: relative;
+  padding: 20px;
+
+  h3 {
+    color: #8b98a3;
+    margin: 5px 0;
+    font-weight: 700;
+  }
+
+  a {color: #8b98a3;}
+  a:active {color:#8b98a3;}
+  a:hover {color: #5f6970;}
+
+  expand {
+    position: absolute;
+    right: 50px;
+    top: 24px;
+    font-size: 17px;
+    color: #bac5d0;
+    font-weight: 700;
+  }
+
+  ul {
+    display: flex;
+    background-color: #d3dbe2;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  li {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color:  #bac4cc;
+  }
+}
+
+/* 반응형 */
+@media screen and (max-width: 1279px) {
+  .popular li:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .popular li:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popular li:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popular li:nth-child(2) {
+    display: none;
+  }
+}
