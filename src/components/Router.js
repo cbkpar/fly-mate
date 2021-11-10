@@ -5,12 +5,15 @@ import Profile from "./Profile/Profile";
 import Community from "./Community/Community";
 
 export default () => (
+  /* github 배포용
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  */
   <BrowserRouter>
     <Header />
     <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route exact path='/Profile' element={<Profile />} />
-      <Route exact path='/Community' element={<Community />} />
+      <Route path='/Profile' element={<Profile />} />
+      <Route path='/Community' element={<Community />} />
     </Routes>
   </BrowserRouter>
 );
