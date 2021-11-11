@@ -20,7 +20,7 @@ class PopularArticle extends Component {
           </div>
         </section>
         <section className="popular">
-          <h3>지금 가장 인기있는 여행 일정</h3>
+          <h3>지금 가장 인기있는 여행 일기</h3>
             <expand><Link to="/" onClick="">더보기</Link></expand>
             <div className="container">
               <ul>

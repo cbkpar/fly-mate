@@ -1,0 +1,26 @@
+.myplan_findmate {
+  margin: 20px;
+
+  .area {
+    display: flex;
+
+    li {
+      width: 100px;
+      padding: 10px;
+      border: 1px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      border-radius: 10px;
+      background-color: #d2d2d2;
+    }
+  }
+}

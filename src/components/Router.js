@@ -1,7 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Header from "./Header/Header";
 import Home from "./Home/Home";
-import Profile from "./Profile/Profile";
+import Myplan from "./Myplan/Myplan";
 import Community from "./Community/Community";
 
 export default () => (
@@ -12,7 +12,7 @@ export default () => (
     <Header />
     <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route path='/Profile' element={<Profile />} />
+      <Route path='/Myplan' element={<Myplan />} />
       <Route path='/Community' element={<Community />} />
     </Routes>
   </BrowserRouter>
