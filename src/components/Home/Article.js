@@ -1,34 +1,29 @@
 import React, { Component } from 'react'
 import './Article.scss';
 import Clock from 'react-live-clock'
-import SubArticle from './SubArticle'
+import Worldmap from './Worldmap';
 
 class Article extends Component {
 
   render() {
     return (
       <section className="article">
-      <div className="container">
-        <div className="date">
-          <Clock format={'YYYY년 MM월 DD일'} ticking={false} /> 코로나 19 정보
-        </div>
-        <div className="search">
-          <h4>내가 원하는 지역 코로나 정보 알아보기</h4>
-          <div className="search_detail">
-            <ul>
-              <li>대륙</li>
-              <li>국가</li>
-              <li>도시</li>
-            </ul>
-            <h3>검색</h3>
+        <div className="container">
+          <div className="date">
+            <Clock format={'YYYY년 MM월 DD일'} ticking={false} /> 코로나 19 정보
+            <h4>방문 예정 국가를 클릭하거나 검색해서 전 세계의 코로나 19 정보를 확인하세요.</h4>
+          </div>
+                
+          <div className="board">
+            <div className="board_left">
+              <div className="search">
+                <input placeholder="검색" />
+              </div>
+              <Worldmap />
+              </div>
           </div>
         </div>
-        <div className="board">
-          <div className="board_left"></div>
-          <div className="board_right"><SubArticle /></div>
-        </div>
-      </div>
-    </section>
+      </section>
     )
   }
 }

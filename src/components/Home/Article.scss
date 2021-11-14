@@ -1,78 +1,57 @@
 /* 기사 */
 .article {
-  height: 500px;
+  height: 750px;
   margin: 10px;
 
   .container {
     padding: 20px;
-    height: 450px;
+    height: 650px;
 
     .date {
       font-size: 22px;
       font-weight: 600;
-      color: rgb(139, 152, 163);
-    }
-
-    .search {
-      color: rgb(186,197,207);
+      color: rgb(113, 127, 140);      
       
       h4 {
         font-size: 12px;
         margin: 5px 0 2px 0;
       }
-
-      .search_detail {
-        display: flex;
-        justify-content: c;
-        margin: 5px 0 10px 0;
-      }
-
-      ul {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-      }
-      
-      li {
-        background-color: rgb(227, 232, 237);
-        border-radius: 10px;
-        padding: 5px 0;
-        text-align: center;
-        font-weight: 700;
-      }
-
-      li:nth-child(n) {
-        width: 30%;
-      }
-
-      h3 {
-        width: 15%;
-        margin: 0 30px;
-        text-align: center;
-        color: #fff;
-        background: #bac5cf;
-        padding: 5px 10px;
-        border-radius: 20px;
-      }
     }
 
     .board {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
 
       .board_left {
-        width: 47%;
-        height: 300px;
+        width: 95%;
         background: rgb(186,197,207);
         border-radius: 10px;
-      }
-      
-      .board_right {
-        width: 47%;
-        height: 300px;
-        background: rgb(186,197,207);
-        border-radius: 10px;
-        overflow: hidden;
+
+        .search {
+          position: relative;
+          color: rgb(129,141,153);
+    
+          input {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 150px;
+            margin: 0;
+            text-align: center;
+            color: #fff;
+            background: #bac5cf;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 16px;
+            z-index: 1;
+          }
+
+          input::placeholder {
+            color:white
+          }
+        }
       }
     }
   }
@@ -80,25 +59,9 @@
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
-  .article {
-    height: 750px;
-  }
   
   .article .container .search h3 {
     width: 20%;
-  }
-
-  .article .container .board {
-    flex-wrap: wrap;
-  }
-  .article .container .board .board_left {
-    width: 100%;
-    margin: 10px 0;
-  }
-  
-  .article .container .board .board_right {
-    width: 100%;
-    margin: 10px 0;
   }
 
   .nav .btn_add_schedule {
