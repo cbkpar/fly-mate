@@ -3,9 +3,6 @@ import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
 import MapboxGlLanguage from '@mapbox/mapbox-gl-language';
 import Tooltip from "./Tooltip";
 
-const TOKEN =
-'pk.eyJ1IjoiY2JrcGFyIiwiYSI6ImNrdnpoa3lnZTBhNjQybnJvamR5MjM5emEifQ.ebHp2kAshF6ZRV8eMTXmeA';
-
 const initialState = {
   map_data: [],
   tooltip: null,
@@ -29,6 +26,17 @@ class Map extends Component {
     if (query !== prevProps.query) {
       this.prepareData();
     }
+
+    if (this.mapContainer.current) {
+      const mapInstance = this.mapContainer.current.getMap();
+      if (mapInstance) {
+        mapInstance.addControl(
+          new MapboxGlLanguage({
+            defaultLanguage: "ko"
+          })
+        );
+      }
+    }
   }
 
   prepareData = () => {
@@ -39,8 +47,8 @@ class Map extends Component {
     const maxCount = Math.max(...counts);
     const minCount = Math.min(...counts);
     const diff = maxCount - minCount;
-    const div = diff * 0.2;
-    const div2 = diff * 0.8;
+    const div = diff * 0.3;
+    const div2 = diff * 0.7;
 
     for (const d of map_data) {
       if (d[query] >= div2) {
@@ -77,18 +85,6 @@ class Map extends Component {
 
   mapContainer = React.createRef();
 
-  componentDidUpdate(prevProps) {
-    if (this.mapContainer.current) {
-      const mapInstance = this.mapContainer.current.getMap();
-      if (mapInstance) {
-        mapInstance.addControl(
-          new MapboxGlLanguage({
-            defaultLanguage: "ko"
-          })
-        );
-      }
-    }
-  }
 
   _updateViewport = (viewport) => {
     this.setState({ viewport });
@@ -101,7 +97,7 @@ class Map extends Component {
     return (
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={TOKEN}
+        mapboxApiAccessToken='pk.eyJ1IjoiY2JrcGFyIiwiYSI6ImNrdnpoaDkxYjFjdDEybm9scThwYnBxejEifQ.7Bzg1BQdsMraeZ5XQM7GKg'
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={viewport => this.setState({ viewport })}
         ref={this.mapContainer}
