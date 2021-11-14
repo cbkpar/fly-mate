@@ -6,9 +6,9 @@ import Community from "./Community/Community";
 
 export default () => (
   /* github 배포용
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-  */
   <BrowserRouter>
+  */
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header />
     <Routes>
       <Route exact path='/' element={<Home />} />

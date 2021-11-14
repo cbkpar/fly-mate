@@ -20,7 +20,14 @@
     font-size: 12px;
   }
 
-  .from, .to {
+  h4 {
+    margin: 2px;
+    font-size: 11px;
+  }
+
+  .from {
+    position: relative;
+
     ul {
       display: inline-block
     }
@@ -34,19 +41,6 @@
       width: 150px;
     }
   }
-
-  .btn_add_schedule {
-    background: #bac5cf;
-    width: 250px;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 0px auto;
-    border-radius: 20px;
-
-    h3 {
-      margin: 0;
-    }
-  }
 }
 
 .selectBox * { box-sizing: border-box; }
@@ -54,6 +48,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  height: 50px;
   cursor: pointer;
   padding: 0;
   margin: 0 auto;
@@ -70,33 +65,25 @@
   background-color: #cccccc;
 }
 
-.selectBox:before {
-  content: '✈';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); 
-  right: 8px; 
-  z-index: -1;
-}
-
 .selectBox .label {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: inherit;
   height: inherit;
   border: 0 none;
   outline: 0 none;
-  padding: 5px 10px 5px 20px;
+  padding: 5px 10px 5px 10px;
   background: transparent;
   cursor: pointer;
   color: rgb(126,138,149);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .selectBox .optionList {
   position: absolute; 
-  top: 35px;
+  top: 52px;
   left: 0;
   width: 100%;
   background: #edf0f3;
@@ -113,7 +100,7 @@
 .selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
 
 .selectBox.active {
-    z-index: 10;
+    z-index: 1;
 }
 
 .selectBox.active .optionList {
@@ -136,12 +123,67 @@
   border-bottom: 0 none;
 }
 
+.swap_countries {
+  position:absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 35px;
+  z-index: 2;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(186,197,208);
+  
+  h3 {
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    transition: all .3s ease;
+    transform:  rotate(180deg);
+  }
+}
+
+.swap_countries:hover {
+  background-color: rgb(154, 164, 173);
+}
+
+.swap_countries.active {
+  h3 {
+    transform:  rotate(0deg);
+  }
+}
+
+.btn_add_schedule {
+  margin: 0px auto;
+  
+  button {
+    border: none;
+    width: 250px;
+    background: rgb(139,152,164);
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+
+  button:hover {
+    background: rgb(125, 136, 146);
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
   .nav {
     height: 400px;
 
-    .from, .to {
+    .from {
       h3 {
         display: block;
         margin: 5px 0 0 0 ;
