@@ -100,7 +100,7 @@
 .selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
 
 .selectBox.active {
-    z-index: 1;
+    z-index: 10;
 }
 
 .selectBox.active .optionList {
@@ -197,6 +197,21 @@
       > ul > li {
         width: 80%;
         margin: 0 auto;
+        padding: 20px 0;
+      }
+
+      .swap_countries {
+        z-index: 0;
+        position:absolute;
+        top: 50%;
+      }
+
+      li:nth-child(1) .selectBox {
+        z-index: 11;
+      }
+
+      li:nth-child(2) .selectBox {
+        z-index: 10;
       }
     }
   }

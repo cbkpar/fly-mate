@@ -9,12 +9,29 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  z-index: 10;
+  z-index: 9999;
   
-  h1 {
+  .logo {
     position: absolute;
-    top: -20px;
-    left: 30px;
+    top: 5px;
+    left: 20px;
+    width: 40px;
+    height : 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    transition: all .3s ease;
+  }
+
+  .logo:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.22) 0px -12px 30px, rgba(0, 0, 0, 0.22) 0px 4px 6px, rgba(0, 0, 0, 0.27) 0px 12px 13px, rgba(0, 0, 0, 0.19) 0px -3px 5px;
+  }
+
+  .logotitle {
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    width: 100px;
+    height: 40px;
   }
 
   li {
@@ -35,5 +52,11 @@
     height: 35px;
     border-radius: 50%;
     background: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logotitle {
+    display: none;
   }
 }

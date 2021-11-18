@@ -8,7 +8,10 @@ class Header extends Component {
     return (
       <header className="header">
       <div className="container">
-        <h1>Logo</h1>
+        <Link to="/">
+          <img className="logo" src={process.env.PUBLIC_URL + "/logo192.png"} alt="" />
+          <img className="logotitle" src={process.env.PUBLIC_URL + "/logotitle.png"} alt="" />
+        </Link>
         <ul>
           <li><Link to="/">홈</Link></li>
           <li><Link to="/Myplan">내 여행 일정</Link></li>
